@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="viewport-device-width, initial-scale = 1">
+		<title>Author</title>
+		<link rel="stylesheet" href="css/person_style.css">
+	</head>
+
+	<body>
+		<h1>Welcome Author!</h1>
+
+		<fieldset>
+			<legend>Paper Submission</legend>
+
+			<form action = "/author" method ="post">  <!-- you have to change the action and method to take submissions -->
+				<label>Paper URL</label>
+				<input type="URL" name="paperURL" required>
+
+				<br/>
+
+				<label>Amount<strong>*</strong></label>
+				<input type="number" name="amount" required>
+				<span>*minimum amount is 3 tokens</span>
+
+				<br/>
+
+				<label>Number<span>(of referenced author)</span></label>
+				<input type="number" name="numberofRef">
+
+				<br/>
+
+				<label>Address<span>(of referenced author)</span></label>
+				<input type="text" name="address">
+
+				<br/>
+
+				<button type="Submission">Submit</button>
+
+			</form>
+
+		</fieldset>
+
+	</body>
+
+</html>

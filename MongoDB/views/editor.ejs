@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="viewport-device-width, initial-scale = 1">
+		<title>Editor</title>
+        <link rel="stylesheet" href="css/person_style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+        <h1>Welcome Editor!</h1>
+        
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Paper ID</th>
+                <th>Paper URL</th>
+                <th>numberOfRef</th>
+                <th>Accept</th>
+                <th>Reject</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+               
+                <% papers.forEach(function(paper){ %>
+                    <tr>
+                    <td><%= paper._id %> </td>
+                    <td><%= paper.paperURL %> </td>
+                    <td><%= paper.numberofRef %> </td>
+                    <td><a href="/accept/<%= paper._id %>">Accept</a></td>
+                    <td><a href="/reject/<%= paper._id %>">Reject</a></td>
+                    <td><%= paper.status%> </td>
+                </tr>
+                <% }) %>
+             
+
+
+            </tbody>
+             
+             
+          
+          </table>
+
+		<!-- <fieldset>
+			<legend>Reviewing Paper ID <span id = "paper id">#paper_no</span></legend>
+
+            <form  action = "/editor" method ="post"> 
+                <input type="number" name="id" value="id" style="display: none;" />
+
+				<button id = "Accept" type="submit">Accept</button>
+				<button id = "Reject" type="submit">Reject</button>
+
+			</form>
+
+		</fieldset> -->
+
+	</body>
+
+</html>

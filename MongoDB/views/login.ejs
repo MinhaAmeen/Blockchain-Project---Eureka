@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="viewport-device-width, initial-scale = 1">
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<nav>
+			<a href = "/signup">Sign Up</a>
+			<a class = "active" href = "/login"> Log In</a>
+		</nav>
+
+		<h1>Welcome!</h1>
+		<form action = "/login" method ="post"> <!-- you have to change the action and method to take submissions -->
+			<label>
+				Email Address<span class = "required">*</span>
+			</label>
+			<input type="email" name="email" required />
+
+			<br/>
+
+			<label>
+				Password<span class = "required">*</span>
+			</label>
+			<input type="password" name="password" required/>
+
+			<br/>
+
+			<button type="submit">Log In</button>
+		</form>
+
+	</body>
+
+</html>

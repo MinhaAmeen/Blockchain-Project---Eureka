@@ -1,0 +1,66 @@
+html{
+	box-sizing: border-box;
+}
+
+h1{
+	text-align: center;
+}
+
+fieldset{
+	padding: 20px 20px;
+	background-color: rgba(193,189,186, 0.4);
+	box-shadow: 0 4px 10px 4px rgba(19,35, 47,.3);
+}
+
+legend{
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+strong{
+	color:red;
+}
+span{
+	font-size: 0.8em;
+	color: gray;
+}
+
+label{
+	font-size: 20px;
+	margin-bottom: 40%;
+	margin-right:20px;
+}
+
+input{
+	margin-bottom: 20px;
+	width: 30%;
+	height: 21px;
+	padding-left: 10px;
+	transition:all.25s ease;
+}
+
+textarea{
+	margin-bottom: 20px;
+}
+
+button{
+	margin-left: 35%;
+	border-radius: 30px; 
+	border: none;
+	background: #1ab188;
+	width: 19%;
+	font-size: 20px;
+	transition:all.5s ease;
+	
+}
+
+#Accept{
+	margin-left: 5%;
+	display: inline-block;
+}
+
+#Reject{
+	margin-left: 8%;
+	display: inline-block;
+	background-color: red;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="viewport-device-width, initial-scale = 1">
+		<title>Reviewer</title>
+		<link rel="stylesheet" href="css/person_style.css">
+	</head>
+
+	<body>
+		<h1>Welcome Reviewer!</h1>
+
+		<fieldset>
+			<legend>Paper Review</legend>
+
+			<form  action = "/review" method ="post">  <!-- you have to change the action and method to take submissions -->
+				<label>Enter Paper ID</label><br/>
+				<input type="number" required name="paperID">
+
+				<br/>
+
+				<label>Enter Review</label><br/>
+				<textarea rows = "6" cols="50" required name="review">Enter your review</textarea>
+
+				<br/>
+
+				<button type="submit">Submit</button>
+
+			</form>
+
+		</fieldset>
+
+	</body>
+
+</html>
